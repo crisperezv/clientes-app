@@ -22,8 +22,10 @@ public class Cliente implements Serializable{
 	private long id;
 	
 	// @Column es necesario ocuparlo cuando la columna tiene nombre distinto o tiene propiedades distintas
+	@Column(nullable=false)
 	private String nombre;
 	private String apellido;
+	@Column(nullable=false, unique=true)
 	private String email;
 	
 	@Column(name = "create_at")

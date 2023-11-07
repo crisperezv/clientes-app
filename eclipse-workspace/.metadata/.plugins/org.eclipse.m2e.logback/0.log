@@ -198,3 +198,62 @@
 2023-11-06 00:16:34,715 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-11-06 00:16:34,719 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-11-06 00:16:34,728 [Worker-51: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 20:55:24,735 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-11-06 21:00:19,198 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:00:19,244 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:00:19,255 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:00:38,524 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:00:38,535 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:00:38,543 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:02:39,901 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:02:39,911 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:02:39,918 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:04:07,430 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-11-06 21:04:37,069 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:04:37,102 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:04:37,116 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:07:17,511 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:07:17,523 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:07:17,531 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:07:36,916 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-11-06 21:07:36,921 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:07:36,932 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:10:30,793 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:10:30,800 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-11-06 21:10:30,804 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:23:33,259 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:23:33,271 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:23:33,279 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:24:19,374 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:24:19,383 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:24:19,389 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:25:23,700 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:25:23,712 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:25:23,720 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:28:32,742 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:28:32,750 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:28:32,757 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:28:58,777 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:28:58,787 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:28:58,794 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:29:49,834 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:29:49,849 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:29:49,858 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:39:23,098 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:39:23,109 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:39:23,115 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 21:41:36,988 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:41:36,998 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 21:41:37,003 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 22:25:07,980 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:25:07,990 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:25:07,996 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 22:26:35,234 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:26:35,245 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:26:35,251 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 22:32:41,131 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:32:41,156 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:32:41,173 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
+2023-11-06 22:39:00,567 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:39:00,594 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-11-06 22:39:00,602 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Acer\OneDrive - Universidad de Concepción\Desktop\ProyectoAngular\eclipse-workspace\spring-boot-backend-apirest\src\test\resources
