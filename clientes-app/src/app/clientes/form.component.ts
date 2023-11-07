@@ -10,7 +10,8 @@ import Swal from 'sweetalert2';
 })
 export class FormComponent implements OnInit{
   public cliente: Cliente = new Cliente();
-  public titulo: String = "Crear cliente";
+  public titulo: string = "Crear cliente";
+  public errors: string[];
 
   constructor(
     private clienteService: ClienteService,
@@ -46,6 +47,11 @@ export class FormComponent implements OnInit{
           `${json.cliente.nombre} ${json.cliente.apellido}`,
           "success"
         )
+      },
+      err => {
+        this.errors = err.error.errors as string[];
+        console.log("Error desde el back-end: "+err.status);
+        console.log(err.error.errors);
       }
     )
   }
@@ -59,6 +65,11 @@ export class FormComponent implements OnInit{
           `${json.cliente.nombre} ${json.cliente.apellido}`,
           "success"
         )
+      },
+      err => {
+        this.errors = err.error.errors as string[];
+        console.log("Error desde el back-end: "+err.status);
+        console.log(err.error.errors);
       }
     )
   }

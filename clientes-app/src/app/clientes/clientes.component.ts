@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { tap } from 'rxjs';
 
 import { Cliente } from './cliente';
 import { ClienteService } from './cliente.service';
@@ -16,11 +17,9 @@ export class ClientesComponent implements OnInit{
   ){}
 
   ngOnInit(): void {
-    this.clienteService.getClientes().subscribe(
-      clientes => {
-        this.clientes = clientes;
-      }
-    );
+    this.clienteService.getClientes().pipe(
+      tap(clientes => this.clientes = clientes)
+    ).subscribe(); // El método subscribe es muy importante, porque me permite obtener los observables del servicio.
   }
 
   delete(cliente: Cliente){

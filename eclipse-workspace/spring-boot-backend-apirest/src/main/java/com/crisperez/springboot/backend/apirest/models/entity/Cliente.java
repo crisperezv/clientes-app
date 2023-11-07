@@ -25,7 +25,7 @@ public class Cliente implements Serializable{
 	private long id;
 	
 	// @Column es necesario ocuparlo cuando la columna tiene nombre distinto o tiene propiedades distintas
-	@NotEmpty
+	@NotEmpty // Puedo agregar 'message' como atributo.
 	@Size(min = 4, max = 20)
 	@Column(nullable=false)
 	private String nombre;
