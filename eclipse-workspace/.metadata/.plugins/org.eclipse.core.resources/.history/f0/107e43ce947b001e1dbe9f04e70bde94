@@ -1,5 +1,0 @@
-package com.crisperez.springboot.backend.apirest.controllers;
-
-public class ClienteRestController {
-
-}
