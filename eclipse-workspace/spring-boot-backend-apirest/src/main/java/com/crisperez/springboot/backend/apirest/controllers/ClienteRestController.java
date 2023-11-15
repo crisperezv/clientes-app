@@ -12,6 +12,8 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
@@ -46,6 +48,8 @@ import jakarta.validation.Valid;
 public class ClienteRestController {
 	@Autowired
 	private IClienteService clienteService;
+	
+	private final Logger log = LoggerFactory.getLogger(ClienteRestController.class);
 	
 	@GetMapping("/clientes")
 	public List<Cliente> index(){
@@ -199,6 +203,7 @@ public class ClienteRestController {
 		if(!archivo.isEmpty()) {
 			String nombreArchivo = UUID.randomUUID().toString()+"_"+archivo.getOriginalFilename().replace(" ", ""); // Para que el nombre del archivo no se repita
 			Path rutaArchivo = Paths.get("uploads").resolve(nombreArchivo).toAbsolutePath();
+			log.info(rutaArchivo.toString());
 			
 			try {
 				Files.copy(archivo.getInputStream(), rutaArchivo);
@@ -231,10 +236,11 @@ public class ClienteRestController {
 	public ResponseEntity<Resource> verFoto(@PathVariable String nombreFoto){
 		Path rutaArchivo = Paths.get("uploads").resolve(nombreFoto).toAbsolutePath();
 		Resource recurso = null;
+		log.info(rutaArchivo.toString());
+		
 		try {
 			recurso = new UrlResource(rutaArchivo.toUri());
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

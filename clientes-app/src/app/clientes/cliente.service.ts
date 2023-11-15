@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DatePipe } from '@angular/common';
 import { of, Observable, throwError } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpStatusCode } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHeaders, HttpRequest, HttpStatusCode } from '@angular/common/http';
 import { map, catchError, tap } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -69,5 +69,18 @@ export class ClienteService {
         return throwError(() => e);
       })
     );
+  }
+
+  subirFoto(archivo: File, id): Observable<HttpEvent<{}>> {
+    let formData = new FormData();
+    formData.append("archivo", archivo);
+    formData.append("id", id);
+
+    // Esto es para recibir el progreso de la subida de imágenes
+    const req = new HttpRequest('POST', `${this.urlEndpoint}/upload`, formData, { 
+      reportProgress: true
+    });
+
+    return this.http.request(req);
   }
 }
