@@ -36,8 +36,18 @@ export class ClientesComponent implements OnInit{
           })
         ).subscribe(); // El método subscribe es muy importante, porque me permite obtener los observables del servicio.
       }
-    )
+    );
     
+    this.modalService.notificarUpload.subscribe(
+      cliente => {
+        this.clientes = this.clientes.map(clienteOriginal => {
+          if(cliente.id == clienteOriginal.id){
+            clienteOriginal.foto = cliente.foto;
+          }
+          return clienteOriginal;
+        })
+      }
+    );
   }
 
   delete(cliente: Cliente){
