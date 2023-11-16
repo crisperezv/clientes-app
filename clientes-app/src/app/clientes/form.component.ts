@@ -3,6 +3,7 @@ import { Cliente } from './cliente';
 import { ClienteService } from './cliente.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import Swal from 'sweetalert2';
+import { Region } from './region';
 
 @Component({
   selector: 'app-form',
@@ -10,6 +11,7 @@ import Swal from 'sweetalert2';
 })
 export class FormComponent implements OnInit{
   public cliente: Cliente = new Cliente();
+  public regiones: Region[];
   public titulo: string = "Crear cliente";
   public errors: string[];
 
@@ -21,24 +23,21 @@ export class FormComponent implements OnInit{
 
   ngOnInit(): void {
     this.cargarCliente();
+    this.clienteService.getRegiones().subscribe(regiones => this.regiones = regiones);
   }
 
   public cargarCliente(): void {
     this.activatedRoute.params.subscribe(
       params => {
         let id = params['id'];
-        if(id){
-          this.clienteService.getCliente(id).subscribe(
-            cliente => {
-              this.cliente = cliente;
-            }
-          )
-        }
+        if(id)
+          this.clienteService.getCliente(id).subscribe(cliente => this.cliente = cliente)
       }
-    )
+    );
   }
 
   public create(): void {
+    console.log(this.cliente);
     this.clienteService.create(this.cliente).subscribe(
       json => {
         this.router.navigate(['/clientes']);
@@ -57,6 +56,7 @@ export class FormComponent implements OnInit{
   }
 
   public update(): void {
+    console.log(this.cliente);
     this.clienteService.update(this.cliente).subscribe(
       json => {
         this.router.navigate(['/clientes']);
@@ -72,5 +72,12 @@ export class FormComponent implements OnInit{
         console.log(err.error.errors);
       }
     )
+  }
+
+  public compararRegion(r1: Region, r2: Region): boolean {
+    if(r1 === undefined && r2 === undefined){
+      return true;
+    }
+    return (r1 == null || r2 == null)? false : r1.id === r2.id;
   }
 }

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 
 import { Cliente } from './cliente';
 import Swal from 'sweetalert2';
+import { Region } from './region';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +20,10 @@ export class ClienteService {
     private http: HttpClient,
     private router: Router
   ) { }
+
+  getRegiones(): Observable<Region[]>{
+    return this.http.get<Region[]>(this.urlEndpoint+'/regiones');
+  }
 
   getClientes(page: number): Observable<any> {
     return this.http.get(this.urlEndpoint+'/page/'+page).pipe(
@@ -83,4 +88,6 @@ export class ClienteService {
 
     return this.http.request(req);
   }
+
+
 }

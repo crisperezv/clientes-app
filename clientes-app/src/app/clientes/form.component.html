@@ -52,9 +52,17 @@
                 <label for="createAt" class="col-form-label col-sm-2">Fecha</label>
                 <div class="col-sm-6">
                     <input matInput [matDatepicker]="miPicker" class="form-control" [(ngModel)]="cliente.createAt" name="createAt" style="display: inline; width: 300px;">
-                    <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
                     <mat-datepicker-toggle matIconSuffix [for]="miPicker"></mat-datepicker-toggle>
                     <mat-datepicker #miPicker></mat-datepicker>
+                </div>
+            </div>
+            <div class="form-group row my-2">
+                <label for="region" class="col-form-label col-sm-2">Región</label>
+                <div class="col-sm-6">
+                    <select [compareWith]="compararRegion" class="form-control" [(ngModel)]="cliente.region" name="region" style="width: 500px;">
+                        <option [ngValue]="undefined">--- Seleccionar una Región ---</option>
+                        <option *ngFor="let region of regiones" [ngValue]="region">{{region.nombre}}</option>
+                    </select>
                 </div>
             </div>
             <div class="form-group row my-2">
