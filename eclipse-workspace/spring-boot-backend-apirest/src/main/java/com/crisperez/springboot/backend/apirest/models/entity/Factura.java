@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -40,10 +42,12 @@ public class Factura implements Serializable {
 	public void prePersist() {
 		this.createAt = new Date();
 	}
-
+	
+	@JsonIgnoreProperties({"facturas", "hibernateLazyInitializer", "handler"}) // Es importante ignorar esto, para no entrar en un loop infinito
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Cliente cliente;
-
+	
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	@JoinColumn(name = "factura_id")
 	private List<ItemFactura> items;
@@ -98,6 +102,14 @@ public class Factura implements Serializable {
 
 	public void setItems(List<ItemFactura> items) {
 		this.items = items;
+	}
+	
+	public Double getTotal() {
+		Double total = 0.00;
+		for(ItemFactura item: items) {
+			total += item.getImporte();
+		}
+		return total;
 	}
 
 	private static final long serialVersionUID = 1L;

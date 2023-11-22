@@ -22,3 +22,21 @@ INSERT INTO clientes (region_id, nombre, apellido, email, create_at) VALUES(4, '
 INSERT INTO clientes (region_id, nombre, apellido, email, create_at) VALUES(4, 'Robb', 'Stark', 'robb@gmail.com', '2023-11-16');
 INSERT INTO clientes (region_id, nombre, apellido, email, create_at) VALUES(4, 'Daenerys', 'Targaryen', 'daenerys@gmail.com', '2023-11-17');
 INSERT INTO clientes (region_id, nombre, apellido, email, create_at) VALUES(3, 'Ramsay', 'Snow', 'ramsay@gmail.com', '2023-11-18');
+
+INSERT INTO productos (nombre, precio, create_at) VALUES('Panasonic Pantalla LCD', 259990, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Sony Cámara Digital DSC-W320B', 123450, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('iPhone 15 Pro Max', 1490000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('iPad 13th gen', 990000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Samsung Galaxy Book3', 590000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Samsung Galaxy Watch 6', 249000, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES('Motorola Moto G40', 280000, NOW());
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura equipos de oficina', null, 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 1);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(2, 1, 4);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 5);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 1, 7);
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura celulares', 'Celulares nuevos', 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(4, 2, 3);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES(1, 2, 6);

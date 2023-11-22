@@ -2,6 +2,8 @@ package com.crisperez.springboot.backend.apirest.models.entity;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -21,6 +23,7 @@ public class ItemFactura implements Serializable{
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	// @JoinColumn(name="produto_id") --> Si esto no está, se crea automáticamente
+	@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 	private Producto producto;
 
 	public Long getId() {

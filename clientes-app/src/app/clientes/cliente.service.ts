@@ -30,7 +30,7 @@ export class ClienteService {
       map(
         (response: any) => {
           (response.content as Cliente[]).map(cliente => {
-            cliente.nombre = cliente.nombre.toUpperCase();
+            //cliente.nombre = cliente.nombre.toUpperCase();
             return cliente;
           });
           return response;
