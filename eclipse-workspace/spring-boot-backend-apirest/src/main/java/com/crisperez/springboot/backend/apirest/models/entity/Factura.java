@@ -43,7 +43,7 @@ public class Factura implements Serializable {
 		this.createAt = new Date();
 	}
 	
-	@JsonIgnoreProperties({"facturas", "hibernateLazyInitializer", "handler"}) // Es importante ignorar esto, para no entrar en un loop infinito
+	@JsonIgnoreProperties(value={"facturas", "hibernateLazyInitializer", "handler"}, allowSetters=true) // Es importante ignorar esto, para no entrar en un loop infinito
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Cliente cliente;
 	

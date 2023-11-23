@@ -61,7 +61,7 @@ public class Cliente implements Serializable{
 	private Region region;
 	
 	// Cascade permite que al eliminar o agregar un nuevo cliente, los elementos facturas se eliminen o agreguen automáticamente
-	@JsonIgnoreProperties({"cliente", "hibernateLazyInitializer", "handler"}) // Es importante ignorar esto, para no entrar en un loop infinito
+	@JsonIgnoreProperties(value={"cliente", "hibernateLazyInitializer", "handler"}, allowSetters=true) // Es importante ignorar esto, para no entrar en un loop infinito
 	@OneToMany(fetch=FetchType.LAZY, mappedBy = "cliente", cascade = CascadeType.ALL)
 	private List<Factura> facturas;
 
